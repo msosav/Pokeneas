@@ -66,3 +66,7 @@ const Pokeneas = [
     video: "https://www.youtube.com/watch?v=ITrFyOp3_Vg",
   },
 ];
+
+module.exports = {
+  Pokeneas,
+};
