@@ -1,7 +1,7 @@
 const express = require("express");
-const PokeneasApi = require("../controllers/Api/PokeneasApiController");
+const PokeneasApiController = require("../controllers/Api/PokeneasApiController");
 const router = express.Router();
 
-router.get("/", PokeneasApi.index);
+router.get("/", PokeneasApiController.index);
 
 module.exports = router;
