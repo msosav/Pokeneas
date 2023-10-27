@@ -16,4 +16,4 @@ COPY . .
 EXPOSE 8080
 
 # Run the app
-CMD [ "npm", "start" ]
+CMD [ "npm", "index.js" ]
