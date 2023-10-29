@@ -1,4 +1,5 @@
 const { Pokeneas } = require("../../models/Pokeneas");
+const os = require("os");
 
 const index = (req, res) => {
   const number = Math.floor(Math.random() * Pokeneas.length);
@@ -11,6 +12,7 @@ const index = (req, res) => {
     name,
     height,
     skills,
+    "docker-container": os.hostname(),
   });
 };
 
