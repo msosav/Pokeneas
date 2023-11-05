@@ -5,7 +5,7 @@ const WebRoutes = require("./src/routes/WebRoutes");
 class Index {
   static main() {
     const app = express();
-    const port = 8000;
+    const port = 80;
     app.set("view engine", "ejs");
 
     app.set("views", "./src/views");
