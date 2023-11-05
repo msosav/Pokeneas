@@ -18,6 +18,4 @@ class PokeneasApiController {
   };
 }
 
-module.exports = {
-  index,
-};
+module.exports = PokeneasApiController;
