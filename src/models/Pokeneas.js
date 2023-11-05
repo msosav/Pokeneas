@@ -10,7 +10,7 @@ const Pokeneas = [
   },
   {
     id: 2,
-    name: "Boker Groudon",
+    name: "Boxer Groudon",
     height: 2.05,
     skills: "Tearing punch",
     image: "https://storage.googleapis.com/pokenea-imgs/Boxer%20Groudon.png",
