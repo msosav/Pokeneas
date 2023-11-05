@@ -5,6 +5,7 @@ class ApiRoutes {
   static init() {
     const router = express.Router();
     router.get("/", PokeneasApiController.index);
+    router.get("/raw", PokeneasApiController.raw);
     return router;
   }
 }
