@@ -1,9 +1,9 @@
 const express = require("express");
 const PokeneasApiController = require("../controllers/Api/PokeneasApiController");
-const router = express.Router();
 
 class ApiRoutes {
   static init() {
+    const router = express.Router();
     router.get("/", PokeneasApiController.index);
     return router;
   }
