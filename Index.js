@@ -1,15 +1,24 @@
 const express = require("express");
-const app = express();
-const port = 80;
-app.set("view engine", "ejs");
+const ApiRoutes = require("./src/routes/ApiRoutes");
+const WebRoutes = require("./src/routes/WebRoutes");
 
-app.set("views", "./src/views");
-app.use(express.static("./src/public"));
+class Index {
+  static main() {
+    const app = express();
+    const port = 80;
+    app.set("view engine", "ejs");
 
-app.use("/", require("./src/routes/web"));
-app.use("/show_pokecard", require("./src/routes/web"));
-app.use("/show_pokejson", require("./src/routes/web"));
+    app.set("views", "./src/views");
+    app.use(express.static("./src/public"));
 
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
-});
+    app.use("/", WebRoutes.init());
+    app.use("/pokeneas", WebRoutes.pokeneas());
+    app.use("/api", ApiRoutes.init());
+
+    app.listen(port, () => {
+      console.log(`Server running on port ${port}`);
+    });
+  }
+}
+
+Index.main();
