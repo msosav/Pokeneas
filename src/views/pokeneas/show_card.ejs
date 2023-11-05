@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body class="text">
+
+<header>
+    <%- include('../partials/navbar'); %>
+</header>
+
+<main>
+    <div class="mt-4 image-text-container">        
+        
+        <table>
+            <tr>
+                <td><img width="300" src=<%= image %>></td>
+                <td><h1><b>Pokeneas Cards</b></h1>
+                    &nbsp;
+                    <h3>Congrats! You've got <b><%= name %></b>.</h3>
+                    <h3>Here's the quote...</h3>
+                    &nbsp;
+                    <h3><div><p><i>"<%= quote %>"</i></p></div></h3>
+                </td>
+            </tr>
+        </table>
+    </div>
+</main>
+
+<footer>
+    <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>
