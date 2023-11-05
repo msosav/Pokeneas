@@ -1,0 +1,74 @@
+
+:root {
+    --primaryColor: #f03131;
+    --secondaryColor: #fe1e1e;
+    --terciaryColor: #ffdb94;
+    --cuaternaryColor: rgb(219, 59, 59);
+    --titleColor: #da4a05;
+    --textColor: white;
+}
+
+.text {
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+nav {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.gif_2{
+    margin-left: 1em;
+    width: 35px;
+}
+
+.logo {
+    width: 50px;
+    height: 60px;
+}
+
+.bg-primary {
+    background-color: var(--primaryColor) !important;
+}
+
+.copyright {
+    background-color: var(--cuaternaryColor);
+}
+
+.center-text {
+    text-align: center;
+  }
+
+.margin-div {
+    margin-top: 1em;
+    margin-right: 10em;
+    margin-left: 10em;
+}
+
+.image-margin {
+    margin-right: 40px;
+}
+
+.image {
+    border-radius: 12px;
+}
+
+.image-text-container {
+    display: flex; 
+    align-items: center; 
+    margin-left: 15em;
+    margin-right: 10em;
+}
+
+th, td {
+
+    text-align: center;
+    padding: 15px; 
+}
+
+.black-line {
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    margin-top: 0.3em;
+}
