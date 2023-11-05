@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body class="text">
+
+<header>
+    <%- include('../partials/navbar'); %>
+</header>
+
+<main>
+    <div class="center-text mt-5">
+        <h1><b>This is the random JSON</b></h1>
+        <div class="margin-div">
+            <h2><b>{id:</b> <%= id %>,
+                <b>name:</b> <%= name %>,
+                <b>height:</b> <%= height %>,
+                <b>skills:</b> <%= skills %>,
+                <b>docker_container:</b> <%= docker_container %><b>}</b>
+            </h2>
+        </div>
+        <div class="mt-5"><img class="image" width="200" src="https://storage.googleapis.com/pokenea-imgs/pikachu_json.jpeg" alt="Imagen 1"></div>
+    </div>
+</main>
+
+<footer>
+    <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>

@@ -1,21 +1,21 @@
 const { Pokeneas } = require("../../models/Pokeneas");
 const os = require("os");
 
-class PokeneasApiController {
-  index(req, res) {
-    const number = Math.floor(Math.random() * Pokeneas.length);
-    const pokenea = Pokeneas[number];
+const index = (req, res) => {
+  const number = Math.floor(Math.random() * Pokeneas.length);
+  const pokenea = Pokeneas[number];
 
-    const { id, name, height, skills } = pokenea;
+  const { id, name, height, skills } = pokenea;
 
-    res.send({
-      id,
-      name,
-      height,
-      skills,
-      "docker-container": os.hostname(),
-    });
-  }
-}
+  res.render('pokeneas/show_json', {
+    id,
+    name,
+    height,
+    skills,
+    "docker_container": os.hostname(),
+  });
+};
 
-module.exports = PokeneasApiController;
+module.exports = {
+  index,
+};
